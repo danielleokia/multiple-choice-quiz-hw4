@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: rgb(94, 190, 222);
+}
+.quiz-container{
+    width: 100vw;
+    font-size: 15px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+li {
+    padding-bottom: 5px;
+    list-style-type: none;
+    color:aliceblue
+}
+
+ #quiz-container {
+    border: 2px solid #ccc;
+    width: fit-content;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    flex-direction: column;
+
+}
+
+#start-button {
+    font-size: 1rem;
+    border-radius: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(236, 122, 41);
+    margin: 15px 10px;
+    padding: 1rem 2rem;
+}
+
+#start-button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    transition: 0.3s
+}
+
+.quiz-header {
+    position: relative;
+    z-index: 2;
+    height: 70px;
+    padding: 0 30px;
+    background-color: #fff;
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    align-items: center ;
+    justify-content: space-between;
+    box-shadow: 0px 3px 5px 1px rgba(0,0,0,0,1);
+    
+
+}
+
+.quiz-header h2 {
+    font-size: 25px;
+    font-weight: 700;
+    margin-right: 50px;
+}
+
+.quiz-header div{
+    color: #004085;
+    background: #dbebfd;
+    height: 45px;
+    padding: 0 8px;
+    border-radius: 5px;
+    display: flex;
+    width: 145px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.quiz-header ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.gameover {
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    padding: 25px 30px;
+    width: 450px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#replay-quiz,
+#clear-highscore{
+    font-size: 0.8rem;
+    border-radius: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(236, 119, 29);
+    margin: 15px 10px;
+    padding: 1rem 2rem;
+    opacity: 0
+}

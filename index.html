@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Choice Quiz</title>
+    <link rel ="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <div class="quiz-container" id="quiz-container">
+
+    <div id="start-quiz">
+        <h2>This is a quiz based on the different topics learnt in the coding bootcamp</h2>
+        <button id="start-button">Start Quiz</button>
+
+    </div>
+
+<header class="quiz-header" id="quiz-header">
+     <h2 id="question-title">Question</h2>
+    <div class="timer" id="timer">Time left:</div>
+</header>
+     <ul id="answer-choices">
+       <li>
+         <input type="radio" name="answer" id="a" class="answer">
+         <label for="a" id="a-text">Answer</label>
+       </li>
+
+       <li>
+        <input type="radio" name="answer" id="b" class="answer">
+        <label for="b" id="b-text">Answer</label>
+       </li> 
+
+       <li>
+        <input type="radio" name="answer" id="c" class="answer">
+        <label for="c" id="c-text">Answer</label>
+       </li> 
+    
+     </ul>
+    
+
+    <div class="gameover" id="gameover">
+        <div class="gameover-text">You've completed the quiz!</div>
+        <div class="score">Your final score is ""</div>
+    
+    
+      <div id="final-score"></div>
+    </div>
+
+    <div id="highscores">
+        <div id="highscore-header">
+            <h3>User Initials:</h3>
+            <input type="text" placeholder="Enter your initials" name="initials" id="initials">
+            <h3>Score:</h3>
+            <button id="submit-score">Submit score</button>
+            
+            <div id="gameover-buttons">
+                <button id="replay-quiz">Play again</button>
+                <button id="clear-highscore">Clear Highscores</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <br>
+
+    
+
+
+
+<script src="assets/script.js"></script>
+</body>
+</html>
